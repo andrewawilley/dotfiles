@@ -1,0 +1,7 @@
+[user]
+	name = andrewawilley
+	email = andrew.willey@five9.com
+[core]
+	editor = vim
+[init]
+	defaultBranch = main
