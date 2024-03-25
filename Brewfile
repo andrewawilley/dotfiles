@@ -1,4 +1,4 @@
-tapb "homebrew/cask-versions"
+tap "homebrew/cask-versions"
 tap "FelixKratz/formulae"
 tap "homebrew/cask-fonts"
 tap "homebrew/services"

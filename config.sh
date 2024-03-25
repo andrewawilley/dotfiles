@@ -9,6 +9,11 @@ do
     cp ~/dotfiles/$(echo $dotfile) ~/$(echo $dotfile)
 done
 
+# add an option to quit the script if the user only wants to update the dotfiles
+if [ "$1" == "df" ]; then
+    exit
+fi
+
 # run the Brewfile
 brew bundle --file=~/dotfiles/Brewfile
 
