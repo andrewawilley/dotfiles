@@ -1,3 +1,5 @@
+# Taps
+# ----------------------------------------------------------
 tap "homebrew/cask-versions"
 tap "FelixKratz/formulae"
 tap "homebrew/cask-fonts"
@@ -7,31 +9,25 @@ tap "homebrew/bundle"
 
 # Formula
 # ----------------------------------------------------------
-brew "zsh-syntax-highlighting"
+brew "python3"
 brew "zsh-autosuggestions"
 brew "zsh-completions"
-
-brew "python3"
+brew "zsh-syntax-highlighting"
 
 # Casks
 # ----------------------------------------------------------
-cask "homebrew/cask-fonts/font-roboto-mono-nerd-font"
-cask "visual-studio-code"
-cask "logitech-options"
-
-
-cask "rectangle"
 cask "alt-tab"
-cask "stretchly"
-
-cask "iterm2"
-cask "google-chrome"
 cask "firefox"
-cask "obs"
-cask "visual-studio-code"
+cask "google-chrome"
+cask "hiddenbar"
+cask "homebrew/cask-fonts/font-roboto-mono-nerd-font"
+cask "iterm2"
 cask "logi-options-plus"
-
-# cask "brave-browser"
+cask "obs"
+cask "rectangle"
+cask "reaper"
+cask "stretchly"
+cask "visual-studio-code"
 
 # Mas (app store applications)
 # ----------------------------------------------------------

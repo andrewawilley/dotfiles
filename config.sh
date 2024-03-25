@@ -1,5 +1,7 @@
 #! /bin/bash
 
+# run with the "df" argument to only update the dotfiles
+
 # don't want to override the bash_profile yet, commenting out for now
 # DOTFILES=(.bash_profile .gitconfig .gitignore .zshrc)
 DOTFILES=(.gitconfig .gitignore .zshrc)
@@ -9,7 +11,7 @@ do
     cp ~/dotfiles/$(echo $dotfile) ~/$(echo $dotfile)
 done
 
-# add an option to quit the script if the user only wants to update the dotfiles
+# exit if only updating dotfiles
 if [ "$1" == "df" ]; then
     exit
 fi
@@ -22,9 +24,16 @@ defaults write com.apple.finder ShowPathbar -bool true # Enable path view
 defaults write com.apple.finder _FXSortFoldersFirst -bool true # Keep folders on top
 killall Finder # Restart Finder to apply changes
 
+## TextEdit configurations
+# Use plain text mode for new TextEdit documents
+defaults write com.apple.TextEdit RichText -int 0
+# Open and save files as UTF-8 in TextEdit
+defaults write com.apple.TextEdit PlainTextEncoding -int 4
+defaults write com.apple.TextEdit PlainTextEncodingForWrite -int 4
+
 # These are untested, but I'm keeping them here for reference
 # Keyboard configurations
-# defaults write -g KeyRepeat -int 2 # Set key repeat rate to Fast (lower number is faster)
+defaults write NSGlobalDomain KeyRepeat -float 0.000000000001 # Set key repeat rate to Fast (lower number is faster)
 # defaults write -g InitialKeyRepeat -int 15 # Set delay until repeat to medium-short (range from 15-120)
 
 # # Disable smart quotes as they’re annoying when typing code

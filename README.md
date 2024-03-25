@@ -3,3 +3,10 @@ This is a quick way to get up and running on a new Mac.  Pull directly to the us
 
 # TODO 
  * Finish testing all of the MacOS default updates
+
+Can use 
+    $ cp -r /Library/Preferences before
+
+Make, the change, and then 
+    $ cp -r /Library/Preferences after
+    $ diff -ur before after
