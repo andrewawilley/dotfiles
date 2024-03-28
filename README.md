@@ -1,18 +1,9 @@
 # Quickstart
-This is a quick way to get up and running on a new Mac.  Pull directly to the user home folder, update the Brewfile with additional packages and comment out the formulae/casks you don't want.  Grant execute permission with `chmod -x config.sh` and then run with `./config.sh`
+This is a quick way to get up and running on a new Mac with my opinionated set of apps.  
 
-# TODO 
- * Finish testing all of the MacOS default updates
+From the user home directory, run
 
-Can use 
-
-    $ cp -r /Library/Preferences before
-
-which will capture all the current preferences.  Make a settings change, and then look at the differences to see what default you may be able to use to do it automatically.
-
-    $ cp -r /Library/Preferences after
-    $ diff -ur before after
-
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/andrewawilley/dotfiles/main/my_mac_setup.sh)"
 
 # Summary of my personal preferences
 
@@ -33,3 +24,18 @@ Settings
     * Trackpad
       * Enable Tap to Click
       * More Gestures -> Enable App Expose with three finger down-swipe
+ * Strechly
+    * 15 minutes between micro-breaks
+
+
+# TODO 
+ * Finish testing all of the MacOS default updates
+
+Can use 
+
+    cp -r /Library/Preferences before
+
+which will capture all the current preferences.  Make a settings change, and then look at the differences to see what default you may be able to use to do it automatically.
+
+    cp -r /Library/Preferences after
+    diff -ur before after
