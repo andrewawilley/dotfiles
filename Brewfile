@@ -9,6 +9,8 @@ tap "homebrew/bundle"
 
 # Formula
 # ----------------------------------------------------------
+brew "neovim"
+brew "powershell/tap/powershell"
 brew "python3"
 brew "zsh-autosuggestions"
 brew "zsh-completions"
@@ -28,6 +30,18 @@ cask "rectangle"
 cask "reaper"
 cask "stretchly"
 cask "visual-studio-code"
+
+# Visual Studio Code Extensions
+# ----------------------------------------------------------
+vscode "github.copilot"
+vscode "github.copilot-chat"
+vscode "ms-azuretools.vscode-docker"
+vscode "ms-python.black-formatter"
+vscode "ms-python.debugpy"
+vscode "ms-python.python"
+vscode "ms-python.vscode-pylance"
+vscode "ms-vscode-remote.remote-containers"
+vscode "redhat.vscode-xml"
 
 # Mas (app store applications)
 # ----------------------------------------------------------

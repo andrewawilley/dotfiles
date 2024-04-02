@@ -1,5 +1,8 @@
 #! /bin/bash
 
+# install xcode command line tools which includes git and other tools
+xcode-select --install
+
 # install homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
@@ -25,8 +28,6 @@ fi
 # disable spctl to allow runnign jnlp files
 # TODO find a better way to do this
 sudo spctl --master-disable
-
-# run with the "df" argument to only update the dotfiles
 
 # don't want to override the bash_profile yet, commenting out for now
 # DOTFILES=(.bash_profile .gitconfig .gitignore .zshrc)

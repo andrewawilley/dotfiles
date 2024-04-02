@@ -5,6 +5,15 @@ From the user home directory, run
 
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/andrewawilley/dotfiles/main/my_mac_setup.sh)"
 
+This will 
+
+  1. Install the xcode commandline tools (includes git)
+  2. Install the Homebrew package manager
+  3. Pulls the dotfiles repo to the user home folder
+  4. Runs brew to install the formulae/casks/etc from the Brewfile
+  5. Installs oh-my-zsh 
+  6. Copies the dotfiles
+  
 # Summary of my personal preferences
 
 Settings
