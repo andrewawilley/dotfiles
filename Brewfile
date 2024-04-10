@@ -30,6 +30,7 @@ cask "rectangle"
 cask "reaper"
 cask "stretchly"
 cask "visual-studio-code"
+cask "vlc"
 
 # Visual Studio Code Extensions
 # ----------------------------------------------------------
